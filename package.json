@@ -1,0 +1,38 @@
+{
+  "name": "open-with",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "clean": "rm -rf dist",
+    "dev": "npx ts-node-dev --respawn --transpile-only src/index.ts",
+    "prepare": "npm run build",
+    "lint": "eslint",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "keywords": [],
+  "author": "Caleb Mabry",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.cts",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/plist": "^3.0.5",
+    "@types/ref-napi": "^3.0.12",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "ffi-rs": "^1.2.5",
+    "plist": "^3.1.0"
+  }
+}
