@@ -1,6 +1,6 @@
-# Open-With
+# open-with-applications
 
-**Open-With** is a Node.js package designed to help you find applications that can open a given file on macOS. It leverages macOS's `mdls` and `mdfind` commands, as well as the CoreServices and CoreFoundation frameworks, to determine the appropriate apps that support a specific file type. 
+**open-with-applications** is a Node.js package designed to help you find applications that can open a given file on macOS. It leverages macOS's `mdls` and `mdfind` commands, as well as the CoreServices and CoreFoundation frameworks, to determine the appropriate apps that support a specific file type. 
 
 ## Features
 - Determine the UTI (Uniform Type Identifier) for a file.
@@ -11,7 +11,7 @@
 ## Installation
 
 ```bash
-npm install open-with
+npm install open-with-applications
 ```
 
 # Usage
@@ -20,7 +20,7 @@ npm install open-with
 To find the applications that can open a specific file, you can use the getApplications function. The function accepts the file path and returns a list of applications that can open the file.
 
 ```js
-import { Mac } from 'open-with';
+import { Mac } from 'open-with-applications';
 
 const filePath = '/path/to/your/file.txt';
 
