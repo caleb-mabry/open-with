@@ -1,6 +1,6 @@
 {
   "name": "open-with",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "build": "tsup src/index.ts --dts",
@@ -13,12 +13,12 @@
   "engines": {
     "node": "20"
   },
-  "keywords": [],
+  "keywords": ["macos", "applications", "open-file", "uti"],
   "author": "Caleb Mabry",
   "main": "dist/index.cjs",
   "types": "dist/index.d.cts",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "A Node.js package to find applications that can open a file on macOS",
   "devDependencies": {
     "@types/plist": "^3.0.5",
     "@types/ref-napi": "^3.0.12",
